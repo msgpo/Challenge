@@ -26,7 +26,7 @@ public:
     d=sqrt( pow(x1-x2,2)  +   pow(y1-y2,2) + pow(z1-z2,2) + pow(w1-w2,2)   );
     cout<<"\n Distance between point A(X1,Y1,Z1,W1) and (X2,Y2,Z2,W2) is: "<<d << "\n\n";
 }
-
+//Translation transformation
     void trans(){
     x1_n = x1 + tx;
     x2_n = x2 + tx;
@@ -44,6 +44,7 @@ public:
     d_n=sqrt( pow(x1_n-x2_n,2)  +   pow(y1_n-y2_n,2) + pow(z1_n-z2_n,2) + pow(w1_n-w2_n,2)   );
     cout<<"\n Distance between new point A(X1_n,Y1_n,Z1_n,W1_n) and (X2_n,Y2_n,Z2_n,W2_n) is: "<<d_n << "\n\n";
 }
+    //Rotation transformation
     void rotate(float a){
     	x1_n = x1*cos(a) - y1*sin(a);
     	x2_n = x2*cos(a) - y2*sin(a);
@@ -56,7 +57,7 @@ public:
         cout<<"\n New value of A and B:";
         cout<<"\nX1:"<<x1_n<<"\nY1:"<<y1_n<<"\nZ1:"<<z1_n<<"\nW1:"<<w1_n<<"\nX2:"<<x2_n<<"\nY2:"<<y2_n<<"\nZ2:"<<z2_n<<"\nW2:"<<w2_n;
             }
-
+//Check if distance invariant
     void check(){
     	if (d==d_n)
     		cout<<"True";
