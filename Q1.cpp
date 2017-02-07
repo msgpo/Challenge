@@ -22,10 +22,9 @@ public:
 
 }
     //Caculate the distance
-    int calc(){
+    void calc(){
     d=sqrt( pow(x1-x2,2)  +   pow(y1-y2,2) + pow(z1-z2,2) + pow(w1-w2,2)   );
     cout<<"\n Distance between point A(X1,Y1,Z1,W1) and (X2,Y2,Z2,W2) is: "<<d << "\n\n";
-    return d;
 }
 
     void trans(){
