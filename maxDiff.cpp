@@ -1,3 +1,12 @@
+#include<stdio.h>
+ 
+/* The function assumes that there are at least two
+   elements in array.
+   The function returns a negative value if the array is
+   sorted in decreasing order.
+   Returns 0 if elements are equal  */
+
+
 int maxDiff(int arr[], int n)
 {
 	int maxDiff = -1; // Initialize Result
@@ -18,4 +27,13 @@ int maxDiff(int arr[], int n)
 		}
 	}
 	return maxDiff;
+}
+
+int main()
+{
+  int arr[] = {1, 2, 6, 80, 100};
+  int size = sizeof(arr)/sizeof(arr[0]);
+  printf("Maximum difference is %d",  maxDiff(arr, size));
+  getchar();
+  return 0;
 }
